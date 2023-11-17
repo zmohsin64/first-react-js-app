@@ -1,3 +1,4 @@
+import ShowName from "./components/FirstComponent";
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
         git
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nostrum doloremque laborum labore minus? Qui fugiat aliquid quisquam odio ipsum itaque veritatis alias repellendus similique. Veritatis nesciunt consequatur aspernatur. Debitis!
       </p>
+      <ShowName />
     </>
   )
 }
