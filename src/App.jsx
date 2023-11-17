@@ -1,4 +1,4 @@
-import ShowName from "./components/FirstComponent";
+import ShowName, { AdminPanel, LoginForm, ShoppingList, Square } from "./components/FirstComponent";
 
 
 function App() {
@@ -13,12 +13,13 @@ function App() {
     console.log("clicked", counter);
     counter = counter + 1
   }
-  let content;
+  let content, isLoggedIn = false;
   if(isLoggedIn){
-    content = <AdminPanel />;
+    content = <AdminPanel />
   }else{
-    content = <LoginForm />;
+    content = <LoginForm />
   }
+  
   return (
     <>
     <div>
@@ -34,6 +35,7 @@ function App() {
       height: user.imageSize
     }}
     />
+    <ShoppingList />
     <h1>Icerativez</h1>
     <h2>About</h2>
       <p>Hello there.<br />How do you do?</p>
@@ -49,6 +51,7 @@ function App() {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nostrum doloremque laborum labore minus? Qui fugiat aliquid quisquam odio ipsum itaque veritatis alias repellendus similique. Veritatis nesciunt consequatur aspernatur. Debitis!
       </p>
       <ShowName />
+      <Square />
     </>
   )
 }
