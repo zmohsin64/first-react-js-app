@@ -13,8 +13,17 @@ function App() {
     console.log("clicked", counter);
     counter = counter + 1
   }
+  let content;
+  if(isLoggedIn){
+    content = <AdminPanel />;
+  }else{
+    content = <LoginForm />;
+  }
   return (
     <>
+    <div>
+      {content}
+    </div>
     <h3>{user.name}</h3>
     <img
     className="avatar"
