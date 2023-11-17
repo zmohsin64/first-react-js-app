@@ -1,4 +1,4 @@
-import ShowName, { AdminPanel, LoginForm, ShoppingList, Square } from "./components/FirstComponent";
+import ShowName, { AdminPanel, Board, LoginForm, ShoppingList, Square } from "./components/FirstComponent";
 
 
 function App() {
@@ -52,6 +52,7 @@ function App() {
       </p>
       <ShowName />
       <Square />
+      <Board />
     </>
   )
 }
